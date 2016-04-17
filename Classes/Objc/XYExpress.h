@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "BabyBluetooth.h"
+#import "XYExpressDistributer.h"
 
 
-@interface BabyBluetooth_express : NSObject
+@interface XYExpress : NSObject
+
+
+typedef void (^XYUpdateStateBlock)(BOOL enable);
+typedef BOOL (^XYFilterDiscoverBlock)(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI);
+
 
 
 #pragma mark - 方法
@@ -18,11 +24,9 @@
 /**
  从扫描开始启动
 */
-- (void)startFromScanWithUUIDString:(NSString *)UUID;
 - (void)startFromScanWithName:(NSString *)name;
-- (void)startFromScanBlick:(BOOL (^) (NSString *peripheralName, NSString *MAC, NSDictionary *advertisementData, NSNumber *RSSI))block;
+- (void)startFromScanBlock:(BOOL (^) (NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI))block;
 
-- (void)startFromScan:(NSString *)condition;
 
 /**
  从连接开始启动
@@ -48,24 +52,22 @@
 
 
 /*
- 设备管理器状态变化
+ 设备管理器状态变化,后续错误，发现设备，连接设备，
  
- Yes:可用
- No:不可用
 */
-- (void)onUpdateState:(void (^)(BOOL *enable))block ;
+- (void)onUpdateState:(void (^) (BOOL enable))block;
 
 /**
- 外设准备完成
+ 外设准备完成，返回外设，外设所有的服务，特征和特征值数据集合
  
  说明：这个方法作为自定义的业务逻辑的入口
  **/
-- (void)onReady:(BabyBluetooth_express *)express;
+- (void)onReady:(XYExpress *)express;
 
 //特征值解析
-- (void)onRecivedDataForParse:(NSString * (^)(NSString *CUUID))block;
-- (void)onRecivedData:(NSString * (^)(NSString *CUUID))block;
-
+- (BOOL)dataForParse:(NSString * (^)(NSString *CUUID))block;
+- (void)onRecivedParseData:(void * (^)(NSDictionary *data))block;
+- (void)onRecivedUnparseData:(void * (^)(NSData *data))block;
 
 - (void)onReConncet:(void (^)(NSUInteger *reConnectTimes))block;
 

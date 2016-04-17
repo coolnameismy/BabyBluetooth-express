@@ -14,7 +14,7 @@
 		7996BCD31CC352EE00207DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7996BCD21CC352EE00207DA7 /* Assets.xcassets */; };
 		7996BCD61CC352EE00207DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7996BCD41CC352EE00207DA7 /* LaunchScreen.storyboard */; };
 		7996BCE11CC352EE00207DA7 /* babybluetooth_express_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCE01CC352EE00207DA7 /* babybluetooth_express_demoTests.m */; };
-		7996BCFE1CC356C500207DA7 /* BabyBluetooth-express.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCFD1CC356C500207DA7 /* BabyBluetooth-express.m */; };
+		7996BCFE1CC356C500207DA7 /* XYExpress.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCFD1CC356C500207DA7 /* XYExpress.m */; };
 		7996BD111CC356F100207DA7 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD011CC356F100207DA7 /* BabyBluetooth.m */; };
 		7996BD121CC356F100207DA7 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD031CC356F100207DA7 /* BabyCallback.m */; };
 		7996BD131CC356F100207DA7 /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD051CC356F100207DA7 /* BabyCentralManager.m */; };
@@ -23,6 +23,7 @@
 		7996BD161CC356F100207DA7 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD0B1CC356F100207DA7 /* BabyRhythm.m */; };
 		7996BD171CC356F100207DA7 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD0D1CC356F100207DA7 /* BabySpeaker.m */; };
 		7996BD181CC356F100207DA7 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD0F1CC356F100207DA7 /* BabyToy.m */; };
+		7996BD1B1CC3814F00207DA7 /* XYExpressDistributer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD1A1CC3814F00207DA7 /* XYExpressDistributer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,8 @@
 		7996BCDC1CC352EE00207DA7 /* babybluetooth-express-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "babybluetooth-express-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7996BCE01CC352EE00207DA7 /* babybluetooth_express_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = babybluetooth_express_demoTests.m; sourceTree = "<group>"; };
 		7996BCE21CC352EE00207DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7996BCFC1CC356C500207DA7 /* BabyBluetooth-express.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-express.h"; sourceTree = "<group>"; };
-		7996BCFD1CC356C500207DA7 /* BabyBluetooth-express.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BabyBluetooth-express.m"; sourceTree = "<group>"; };
+		7996BCFC1CC356C500207DA7 /* XYExpress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYExpress.h; sourceTree = "<group>"; };
+		7996BCFD1CC356C500207DA7 /* XYExpress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYExpress.m; sourceTree = "<group>"; };
 		7996BD001CC356F100207DA7 /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
 		7996BD011CC356F100207DA7 /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
 		7996BD021CC356F100207DA7 /* BabyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCallback.h; sourceTree = "<group>"; };
@@ -67,6 +68,8 @@
 		7996BD0D1CC356F100207DA7 /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
 		7996BD0E1CC356F100207DA7 /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
 		7996BD0F1CC356F100207DA7 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
+		7996BD191CC3814F00207DA7 /* XYExpressDistributer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYExpressDistributer.h; sourceTree = "<group>"; };
+		7996BD1A1CC3814F00207DA7 /* XYExpressDistributer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYExpressDistributer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +146,10 @@
 		7996BCFB1CC356C500207DA7 /* BabyBluetooth-express */ = {
 			isa = PBXGroup;
 			children = (
-				7996BCFC1CC356C500207DA7 /* BabyBluetooth-express.h */,
-				7996BCFD1CC356C500207DA7 /* BabyBluetooth-express.m */,
+				7996BCFC1CC356C500207DA7 /* XYExpress.h */,
+				7996BCFD1CC356C500207DA7 /* XYExpress.m */,
+				7996BD191CC3814F00207DA7 /* XYExpressDistributer.h */,
+				7996BD1A1CC3814F00207DA7 /* XYExpressDistributer.m */,
 			);
 			name = "BabyBluetooth-express";
 			path = ../Classes/Objc;
@@ -288,7 +293,8 @@
 				7996BD141CC356F100207DA7 /* BabyOptions.m in Sources */,
 				7996BCCB1CC352EE00207DA7 /* AppDelegate.m in Sources */,
 				7996BD151CC356F100207DA7 /* BabyPeripheralManager.m in Sources */,
-				7996BCFE1CC356C500207DA7 /* BabyBluetooth-express.m in Sources */,
+				7996BD1B1CC3814F00207DA7 /* XYExpressDistributer.m in Sources */,
+				7996BCFE1CC356C500207DA7 /* XYExpress.m in Sources */,
 				7996BD121CC356F100207DA7 /* BabyCallback.m in Sources */,
 				7996BD171CC356F100207DA7 /* BabySpeaker.m in Sources */,
 				7996BD131CC356F100207DA7 /* BabyCentralManager.m in Sources */,
