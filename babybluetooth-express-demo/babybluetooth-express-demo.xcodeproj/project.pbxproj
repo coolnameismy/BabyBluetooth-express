@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7996BCC81CC352EE00207DA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCC71CC352EE00207DA7 /* main.m */; };
+		7996BCCB1CC352EE00207DA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCCA1CC352EE00207DA7 /* AppDelegate.m */; };
+		7996BCCE1CC352EE00207DA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCCD1CC352EE00207DA7 /* ViewController.m */; };
+		7996BCD11CC352EE00207DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7996BCCF1CC352EE00207DA7 /* Main.storyboard */; };
+		7996BCD31CC352EE00207DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7996BCD21CC352EE00207DA7 /* Assets.xcassets */; };
+		7996BCD61CC352EE00207DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7996BCD41CC352EE00207DA7 /* LaunchScreen.storyboard */; };
+		7996BCE11CC352EE00207DA7 /* babybluetooth_express_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCE01CC352EE00207DA7 /* babybluetooth_express_demoTests.m */; };
+		7996BCFE1CC356C500207DA7 /* BabyBluetooth-express.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCFD1CC356C500207DA7 /* BabyBluetooth-express.m */; };
+		7996BD111CC356F100207DA7 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD011CC356F100207DA7 /* BabyBluetooth.m */; };
+		7996BD121CC356F100207DA7 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD031CC356F100207DA7 /* BabyCallback.m */; };
+		7996BD131CC356F100207DA7 /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD051CC356F100207DA7 /* BabyCentralManager.m */; };
+		7996BD141CC356F100207DA7 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD071CC356F100207DA7 /* BabyOptions.m */; };
+		7996BD151CC356F100207DA7 /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD091CC356F100207DA7 /* BabyPeripheralManager.m */; };
+		7996BD161CC356F100207DA7 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD0B1CC356F100207DA7 /* BabyRhythm.m */; };
+		7996BD171CC356F100207DA7 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD0D1CC356F100207DA7 /* BabySpeaker.m */; };
+		7996BD181CC356F100207DA7 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD0F1CC356F100207DA7 /* BabyToy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7996BCDD1CC352EE00207DA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7996BCBB1CC352EE00207DA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7996BCC21CC352EE00207DA7;
+			remoteInfo = "babybluetooth-express-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7996BCC31CC352EE00207DA7 /* babybluetooth-express-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babybluetooth-express-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7996BCC71CC352EE00207DA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7996BCC91CC352EE00207DA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7996BCCA1CC352EE00207DA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7996BCCC1CC352EE00207DA7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7996BCCD1CC352EE00207DA7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7996BCD01CC352EE00207DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7996BCD21CC352EE00207DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7996BCD51CC352EE00207DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7996BCD71CC352EE00207DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7996BCDC1CC352EE00207DA7 /* babybluetooth-express-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "babybluetooth-express-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7996BCE01CC352EE00207DA7 /* babybluetooth_express_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = babybluetooth_express_demoTests.m; sourceTree = "<group>"; };
+		7996BCE21CC352EE00207DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7996BCFC1CC356C500207DA7 /* BabyBluetooth-express.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-express.h"; sourceTree = "<group>"; };
+		7996BCFD1CC356C500207DA7 /* BabyBluetooth-express.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BabyBluetooth-express.m"; sourceTree = "<group>"; };
+		7996BD001CC356F100207DA7 /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
+		7996BD011CC356F100207DA7 /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
+		7996BD021CC356F100207DA7 /* BabyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCallback.h; sourceTree = "<group>"; };
+		7996BD031CC356F100207DA7 /* BabyCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCallback.m; sourceTree = "<group>"; };
+		7996BD041CC356F100207DA7 /* BabyCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCentralManager.h; sourceTree = "<group>"; };
+		7996BD051CC356F100207DA7 /* BabyCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCentralManager.m; sourceTree = "<group>"; };
+		7996BD061CC356F100207DA7 /* BabyOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyOptions.h; sourceTree = "<group>"; };
+		7996BD071CC356F100207DA7 /* BabyOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyOptions.m; sourceTree = "<group>"; };
+		7996BD081CC356F100207DA7 /* BabyPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyPeripheralManager.h; sourceTree = "<group>"; };
+		7996BD091CC356F100207DA7 /* BabyPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyPeripheralManager.m; sourceTree = "<group>"; };
+		7996BD0A1CC356F100207DA7 /* BabyRhythm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyRhythm.h; sourceTree = "<group>"; };
+		7996BD0B1CC356F100207DA7 /* BabyRhythm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyRhythm.m; sourceTree = "<group>"; };
+		7996BD0C1CC356F100207DA7 /* BabySpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabySpeaker.h; sourceTree = "<group>"; };
+		7996BD0D1CC356F100207DA7 /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
+		7996BD0E1CC356F100207DA7 /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
+		7996BD0F1CC356F100207DA7 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7996BCC01CC352EE00207DA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7996BCD91CC352EE00207DA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7996BCBA1CC352EE00207DA7 = {
+			isa = PBXGroup;
+			children = (
+				7996BCFF1CC356F100207DA7 /* BabyBluetooth */,
+				7996BCFB1CC356C500207DA7 /* BabyBluetooth-express */,
+				7996BCC51CC352EE00207DA7 /* babybluetooth-express-demo */,
+				7996BCDF1CC352EE00207DA7 /* babybluetooth-express-demoTests */,
+				7996BCC41CC352EE00207DA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7996BCC41CC352EE00207DA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7996BCC31CC352EE00207DA7 /* babybluetooth-express-demo.app */,
+				7996BCDC1CC352EE00207DA7 /* babybluetooth-express-demoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7996BCC51CC352EE00207DA7 /* babybluetooth-express-demo */ = {
+			isa = PBXGroup;
+			children = (
+				7996BCC91CC352EE00207DA7 /* AppDelegate.h */,
+				7996BCCA1CC352EE00207DA7 /* AppDelegate.m */,
+				7996BCCC1CC352EE00207DA7 /* ViewController.h */,
+				7996BCCD1CC352EE00207DA7 /* ViewController.m */,
+				7996BCCF1CC352EE00207DA7 /* Main.storyboard */,
+				7996BCD21CC352EE00207DA7 /* Assets.xcassets */,
+				7996BCD41CC352EE00207DA7 /* LaunchScreen.storyboard */,
+				7996BCD71CC352EE00207DA7 /* Info.plist */,
+				7996BCC61CC352EE00207DA7 /* Supporting Files */,
+			);
+			path = "babybluetooth-express-demo";
+			sourceTree = "<group>";
+		};
+		7996BCC61CC352EE00207DA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7996BCC71CC352EE00207DA7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7996BCDF1CC352EE00207DA7 /* babybluetooth-express-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7996BCE01CC352EE00207DA7 /* babybluetooth_express_demoTests.m */,
+				7996BCE21CC352EE00207DA7 /* Info.plist */,
+			);
+			path = "babybluetooth-express-demoTests";
+			sourceTree = "<group>";
+		};
+		7996BCFB1CC356C500207DA7 /* BabyBluetooth-express */ = {
+			isa = PBXGroup;
+			children = (
+				7996BCFC1CC356C500207DA7 /* BabyBluetooth-express.h */,
+				7996BCFD1CC356C500207DA7 /* BabyBluetooth-express.m */,
+			);
+			name = "BabyBluetooth-express";
+			path = ../Classes/Objc;
+			sourceTree = "<group>";
+		};
+		7996BCFF1CC356F100207DA7 /* BabyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				7996BD001CC356F100207DA7 /* BabyBluetooth.h */,
+				7996BD011CC356F100207DA7 /* BabyBluetooth.m */,
+				7996BD021CC356F100207DA7 /* BabyCallback.h */,
+				7996BD031CC356F100207DA7 /* BabyCallback.m */,
+				7996BD041CC356F100207DA7 /* BabyCentralManager.h */,
+				7996BD051CC356F100207DA7 /* BabyCentralManager.m */,
+				7996BD061CC356F100207DA7 /* BabyOptions.h */,
+				7996BD071CC356F100207DA7 /* BabyOptions.m */,
+				7996BD081CC356F100207DA7 /* BabyPeripheralManager.h */,
+				7996BD091CC356F100207DA7 /* BabyPeripheralManager.m */,
+				7996BD0A1CC356F100207DA7 /* BabyRhythm.h */,
+				7996BD0B1CC356F100207DA7 /* BabyRhythm.m */,
+				7996BD0C1CC356F100207DA7 /* BabySpeaker.h */,
+				7996BD0D1CC356F100207DA7 /* BabySpeaker.m */,
+				7996BD0E1CC356F100207DA7 /* BabyToy.h */,
+				7996BD0F1CC356F100207DA7 /* BabyToy.m */,
+				7996BD101CC356F100207DA7 /* Objc */,
+			);
+			name = BabyBluetooth;
+			path = ../BabyBluetooth;
+			sourceTree = "<group>";
+		};
+		7996BD101CC356F100207DA7 /* Objc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Objc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7996BCC21CC352EE00207DA7 /* babybluetooth-express-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7996BCE51CC352EE00207DA7 /* Build configuration list for PBXNativeTarget "babybluetooth-express-demo" */;
+			buildPhases = (
+				7996BCBF1CC352EE00207DA7 /* Sources */,
+				7996BCC01CC352EE00207DA7 /* Frameworks */,
+				7996BCC11CC352EE00207DA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "babybluetooth-express-demo";
+			productName = "babybluetooth-express-demo";
+			productReference = 7996BCC31CC352EE00207DA7 /* babybluetooth-express-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7996BCDB1CC352EE00207DA7 /* babybluetooth-express-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7996BCE81CC352EE00207DA7 /* Build configuration list for PBXNativeTarget "babybluetooth-express-demoTests" */;
+			buildPhases = (
+				7996BCD81CC352EE00207DA7 /* Sources */,
+				7996BCD91CC352EE00207DA7 /* Frameworks */,
+				7996BCDA1CC352EE00207DA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7996BCDE1CC352EE00207DA7 /* PBXTargetDependency */,
+			);
+			name = "babybluetooth-express-demoTests";
+			productName = "babybluetooth-express-demoTests";
+			productReference = 7996BCDC1CC352EE00207DA7 /* babybluetooth-express-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7996BCBB1CC352EE00207DA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = coolnameismy;
+				TargetAttributes = {
+					7996BCC21CC352EE00207DA7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					7996BCDB1CC352EE00207DA7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 7996BCC21CC352EE00207DA7;
+					};
+				};
+			};
+			buildConfigurationList = 7996BCBE1CC352EE00207DA7 /* Build configuration list for PBXProject "babybluetooth-express-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7996BCBA1CC352EE00207DA7;
+			productRefGroup = 7996BCC41CC352EE00207DA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7996BCC21CC352EE00207DA7 /* babybluetooth-express-demo */,
+				7996BCDB1CC352EE00207DA7 /* babybluetooth-express-demoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7996BCC11CC352EE00207DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7996BCD61CC352EE00207DA7 /* LaunchScreen.storyboard in Resources */,
+				7996BCD31CC352EE00207DA7 /* Assets.xcassets in Resources */,
+				7996BCD11CC352EE00207DA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7996BCDA1CC352EE00207DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7996BCBF1CC352EE00207DA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7996BCCE1CC352EE00207DA7 /* ViewController.m in Sources */,
+				7996BD161CC356F100207DA7 /* BabyRhythm.m in Sources */,
+				7996BD111CC356F100207DA7 /* BabyBluetooth.m in Sources */,
+				7996BD141CC356F100207DA7 /* BabyOptions.m in Sources */,
+				7996BCCB1CC352EE00207DA7 /* AppDelegate.m in Sources */,
+				7996BD151CC356F100207DA7 /* BabyPeripheralManager.m in Sources */,
+				7996BCFE1CC356C500207DA7 /* BabyBluetooth-express.m in Sources */,
+				7996BD121CC356F100207DA7 /* BabyCallback.m in Sources */,
+				7996BD171CC356F100207DA7 /* BabySpeaker.m in Sources */,
+				7996BD131CC356F100207DA7 /* BabyCentralManager.m in Sources */,
+				7996BD181CC356F100207DA7 /* BabyToy.m in Sources */,
+				7996BCC81CC352EE00207DA7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7996BCD81CC352EE00207DA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7996BCE11CC352EE00207DA7 /* babybluetooth_express_demoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7996BCDE1CC352EE00207DA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7996BCC21CC352EE00207DA7 /* babybluetooth-express-demo */;
+			targetProxy = 7996BCDD1CC352EE00207DA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7996BCCF1CC352EE00207DA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7996BCD01CC352EE00207DA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7996BCD41CC352EE00207DA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7996BCD51CC352EE00207DA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7996BCE31CC352EE00207DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7996BCE41CC352EE00207DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7996BCE61CC352EE00207DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "babybluetooth-express-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jumppo.babybluetooth.express.babybluetooth-express-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7996BCE71CC352EE00207DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "babybluetooth-express-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jumppo.babybluetooth.express.babybluetooth-express-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7996BCE91CC352EE00207DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "babybluetooth-express-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jumppo.babybluetooth.express.babybluetooth-express-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/babybluetooth-express-demo.app/babybluetooth-express-demo";
+			};
+			name = Debug;
+		};
+		7996BCEA1CC352EE00207DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "babybluetooth-express-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jumppo.babybluetooth.express.babybluetooth-express-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/babybluetooth-express-demo.app/babybluetooth-express-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7996BCBE1CC352EE00207DA7 /* Build configuration list for PBXProject "babybluetooth-express-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7996BCE31CC352EE00207DA7 /* Debug */,
+				7996BCE41CC352EE00207DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7996BCE51CC352EE00207DA7 /* Build configuration list for PBXNativeTarget "babybluetooth-express-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7996BCE61CC352EE00207DA7 /* Debug */,
+				7996BCE71CC352EE00207DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7996BCE81CC352EE00207DA7 /* Build configuration list for PBXNativeTarget "babybluetooth-express-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7996BCE91CC352EE00207DA7 /* Debug */,
+				7996BCEA1CC352EE00207DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7996BCBB1CC352EE00207DA7 /* Project object */;
+}
