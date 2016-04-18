@@ -21,6 +21,8 @@
 
 @property (nonatomic , copy) XYUpdateStateBlock updateStateBlock;
 @property (nonatomic , copy) XYFilterDiscoverBlock filterDiscoverBlock;
+@property (nonatomic , copy) XYOnReadyBlock onReadyBlock;
+
 
 @end
 
@@ -34,6 +36,7 @@
     self = [super init];
     if (self) {
         baby = [BabyBluetooth shareBabyBluetooth];
+        [self setCommonDelegate];
         thisExpressChannel = [[NSUUID UUID]UUIDString];
     }
     return self;
@@ -43,21 +46,71 @@
     
 }
 
-- (NSMutableArray *)ExpressList {
-    return [XYExpressDistributer shareExpressList];
-}
+
 
 - (void)setCommonDelegate {
     __weak __typeof(self) weakSelf = self;
+    
+    BabyRhythm *rhythm = [[BabyRhythm alloc]init];
+    rhythm.beatsInterval = 1;
+    [rhythm setBlockOnBeatsBreak:^(BabyRhythm *bry) {
+        [bry beatsOver];
+        //回调ready方法
+        weakSelf.onReadyBlock(self.thePeripheral);
+    }];
     
     //设置委托
     [baby setBlockOnCentralManagerDidUpdateStateAtChannel:thisExpressChannel block:^(CBCentralManager *central) {
         weakSelf.updateStateBlock(central.state == CBCentralManagerStatePoweredOn);
     }];
-    //设置断线重连
+    
+    //设置连接设备的委托
+    [baby setBlockOnConnected:^(CBCentralManager *central, CBPeripheral *peripheral) {
+        weakSelf.thePeripheral = peripheral;
+    }];
+    
+    //设置发现设备的Services的委托
+    [baby setBlockOnDiscoverServices:^(CBPeripheral *peripheral, NSError *error) {
+        
+    }];
+    
+    //设置发现设service的Characteristics的委托
+    [baby setBlockOnDiscoverCharacteristics:^(CBPeripheral *peripheral, CBService *service, NSError *error) {
+         [rhythm beats];
+         
+    }];
+    
+    //设置读取characteristics的委托
+    [baby setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
+        NSLog(@"characteristic name:%@ value is:%@",characteristics.UUID,characteristics.value);
+       [rhythm beats];
+        
+    }];
+    
+    //设置发现characteristics的descriptors的委托
+    [baby setBlockOnDiscoverDescriptorsForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
+        NSLog(@"===characteristic name:%@",characteristic.service.UUID);
+        for (CBDescriptor *d in characteristic.descriptors) {
+            NSLog(@"CBDescriptor name is :%@",d.UUID);
+        }
+        
+    }];
+    
+    //设置读取Descriptor的委托
+    [baby setBlockOnReadValueForDescriptors:^(CBPeripheral *peripheral, CBDescriptor *descriptor, NSError *error) {
+        NSLog(@"Descriptor name:%@ value is:%@",descriptor.characteristic.UUID, descriptor.value);
+    }];
+    
+    //读取rssi的委托
+    [baby setBlockOnDidReadRSSI:^(NSNumber *RSSI, NSError *error) {
+        NSLog(@"setBlockOnDidReadRSSI:RSSI:%@",RSSI);
+        
+    }];
+    
+    //断开设备测
+
 }
 
-//- (XYExpress *)findExpress
 
 /**
  从扫描开始启动
@@ -72,7 +125,6 @@
         return NO;
     }];
     
-    [self setCommonDelegate];
     baby.channel(thisExpressChannel).scanForPeripherals().enjoy();
 }
 
@@ -86,7 +138,6 @@
         return NO;
     }];
     
-    [self setCommonDelegate];
     baby.channel(thisExpressChannel).scanForPeripherals().enjoy();
 }
 
@@ -116,12 +167,10 @@
     self.updateStateBlock = block;
 }
 
-/**
- 外设准备完成
- 
- 说明：这个方法作为自定义的业务逻辑的入口
- **/
-//- (void)onReady:(BabyBluetooth_express *)express;
+
+- (void)onReady:(void (^)(CBPeripheral *peripheral))block {
+    self.onReadyBlock = block;
+}
 
 //特征值解析
 //- (void)onRecivedDataForParse:(NSString * (^)(NSString *CUUID))block;
@@ -131,6 +180,13 @@
 //- (void)onReConncet:(void (^)(NSUInteger *reConnectTimes))block;
 
 
+#pragma mark - XYExpressActivityDelegate 收到数据通知
+- (void)received:(NSDictionary *)data type:(NSString *)type {
+    
+}
+- (void)error:(NSError *)error type:(NSString *)type {
+    
+}
 #pragma mark - 私有方法
 
 

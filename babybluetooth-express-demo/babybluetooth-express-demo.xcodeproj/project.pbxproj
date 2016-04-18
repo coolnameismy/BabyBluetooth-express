@@ -23,7 +23,7 @@
 		7996BD161CC356F100207DA7 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD0B1CC356F100207DA7 /* BabyRhythm.m */; };
 		7996BD171CC356F100207DA7 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD0D1CC356F100207DA7 /* BabySpeaker.m */; };
 		7996BD181CC356F100207DA7 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD0F1CC356F100207DA7 /* BabyToy.m */; };
-		7996BD1B1CC3814F00207DA7 /* XYExpressDistributer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD1A1CC3814F00207DA7 /* XYExpressDistributer.m */; };
+		7996BD1B1CC3814F00207DA7 /* XYExpressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BD1A1CC3814F00207DA7 /* XYExpressManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +68,8 @@
 		7996BD0D1CC356F100207DA7 /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
 		7996BD0E1CC356F100207DA7 /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
 		7996BD0F1CC356F100207DA7 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
-		7996BD191CC3814F00207DA7 /* XYExpressDistributer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYExpressDistributer.h; sourceTree = "<group>"; };
-		7996BD1A1CC3814F00207DA7 /* XYExpressDistributer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYExpressDistributer.m; sourceTree = "<group>"; };
+		7996BD191CC3814F00207DA7 /* XYExpressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYExpressManager.h; sourceTree = "<group>"; };
+		7996BD1A1CC3814F00207DA7 /* XYExpressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYExpressManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +148,8 @@
 			children = (
 				7996BCFC1CC356C500207DA7 /* XYExpress.h */,
 				7996BCFD1CC356C500207DA7 /* XYExpress.m */,
-				7996BD191CC3814F00207DA7 /* XYExpressDistributer.h */,
-				7996BD1A1CC3814F00207DA7 /* XYExpressDistributer.m */,
+				7996BD191CC3814F00207DA7 /* XYExpressManager.h */,
+				7996BD1A1CC3814F00207DA7 /* XYExpressManager.m */,
 			);
 			name = "BabyBluetooth-express";
 			path = ../Classes/Objc;
@@ -293,7 +293,7 @@
 				7996BD141CC356F100207DA7 /* BabyOptions.m in Sources */,
 				7996BCCB1CC352EE00207DA7 /* AppDelegate.m in Sources */,
 				7996BD151CC356F100207DA7 /* BabyPeripheralManager.m in Sources */,
-				7996BD1B1CC3814F00207DA7 /* XYExpressDistributer.m in Sources */,
+				7996BD1B1CC3814F00207DA7 /* XYExpressManager.m in Sources */,
 				7996BCFE1CC356C500207DA7 /* XYExpress.m in Sources */,
 				7996BD121CC356F100207DA7 /* BabyCallback.m in Sources */,
 				7996BD171CC356F100207DA7 /* BabySpeaker.m in Sources */,
@@ -490,6 +490,7 @@
 				7996BCE71CC352EE00207DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7996BCE81CC352EE00207DA7 /* Build configuration list for PBXNativeTarget "babybluetooth-express-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +499,7 @@
 				7996BCEA1CC352EE00207DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

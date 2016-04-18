@@ -8,13 +8,25 @@
 
 #import <Foundation/Foundation.h>
 #import "XYExpress.h"
+#import "BabyBluetooth.h"
 
-@interface XYExpressDistributer : NSObject
+
+
+@interface XYExpressManager : NSObject
+
+@property (nonatomic ,strong) BabyBluetooth *baby;
+@property (nonatomic ,strong) NSMutableArray *list;
+
+
 
 //单例expressList
-+ (NSMutableArray *)shareExpressList;
++ (instancetype)shareExpressManager;
 
 
 
 
 @end
+
+
+
+

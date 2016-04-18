@@ -8,16 +8,37 @@
 
 #import <Foundation/Foundation.h>
 #import "BabyBluetooth.h"
-#import "XYExpressDistributer.h"
+#import "XYExpressManager.h"
 
 
-@interface XYExpress : NSObject
+#define KCONNECT @"KCONNECT"
+#define KDISCOVERS @"KDISCOVERS"
+#define KDISCOVERC @"KDISCOVERC"
+#define KREADC @"KREADC"
+#define KDISCONNECT @"KDISCONNECT"
+#define KREADVALUE @"KREADVALUE"
+#define KNOTIYVALUE @"KNOTIYVALUE"
+
+
+@protocol XYExpressActivityDelegate <NSObject>
+
+- (void)received:(NSDictionary *)data type:(NSString *)type;
+- (void)error:(NSError *)error type:(NSString *)type;
+@end
+
+
+/**
+ 每一个express只处理一个外设
+ */
+
+@interface XYExpress : NSObject<XYExpressActivityDelegate>
 
 
 typedef void (^XYUpdateStateBlock)(BOOL enable);
 typedef BOOL (^XYFilterDiscoverBlock)(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI);
+typedef void (^XYOnReadyBlock)(CBPeripheral *peripheral);
 
-
+@property (nonatomic , copy) CBPeripheral *thePeripheral;
 
 #pragma mark - 方法
 
@@ -58,11 +79,10 @@ typedef BOOL (^XYFilterDiscoverBlock)(NSString *peripheralName, NSDictionary *ad
 - (void)onUpdateState:(void (^) (BOOL enable))block;
 
 /**
- 外设准备完成，返回外设，外设所有的服务，特征和特征值数据集合
- 
- 说明：这个方法作为自定义的业务逻辑的入口
+
+ 说明：这个方法作为自定义的业务逻辑的入口,外设所有的服务，特征和特征值数据集合完成后回调
  **/
-- (void)onReady:(XYExpress *)express;
+- (void)onReady:(void (^)(CBPeripheral *peripheral))block;
 
 //特征值解析
 - (BOOL)dataForParse:(NSString * (^)(NSString *CUUID))block;
