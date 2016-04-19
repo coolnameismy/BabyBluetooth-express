@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BabyBluetooth.h"
 #import "XYExpressManager.h"
-
+#import "XYExpressActivityDelegate.h"
 
 #define KCONNECT @"KCONNECT"
 #define KDISCOVERS @"KDISCOVERS"
@@ -20,16 +20,6 @@
 #define KNOTIYVALUE @"KNOTIYVALUE"
 
 
-@protocol XYExpressActivityDelegate <NSObject>
-
-- (void)received:(NSDictionary *)data type:(NSString *)type;
-- (void)error:(NSError *)error type:(NSString *)type;
-@end
-
-
-/**
- 每一个express只处理一个外设
- */
 
 @interface XYExpress : NSObject<XYExpressActivityDelegate>
 
@@ -45,14 +35,12 @@ typedef void (^XYOnReadyBlock)(CBPeripheral *peripheral);
 /**
  从扫描开始启动
 */
-- (void)startFromScanWithName:(NSString *)name;
+- (void)startWithNameCondition:(NSString *)nameCondition;
 - (void)startFromScanBlock:(BOOL (^) (NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI))block;
-
 
 /**
  从连接开始启动
  */
-- (void)startFromConnectWithPeripheral:(CBPeripheral *)peripheral;
 - (void)startFromConnectWithPeripheralUUIDString:(NSString *)UUIDString;
 
 /**
@@ -93,3 +81,7 @@ typedef void (^XYOnReadyBlock)(CBPeripheral *peripheral);
 
 
 @end
+
+
+
+

@@ -7,15 +7,21 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "XYExpress.h"
 
 @interface babybluetooth_express_demoTests : XCTestCase
+
+@property (nonatomic, strong) XYExpress *express;
 
 @end
 
 @implementation babybluetooth_express_demoTests
 
+
+
 - (void)setUp {
     [super setUp];
+     self.express = [[XYExpress alloc]init];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 

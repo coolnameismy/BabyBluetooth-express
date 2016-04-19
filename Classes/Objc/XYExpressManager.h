@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XYExpress.h"
 #import "BabyBluetooth.h"
-
-
+@class XYExpress;
 
 @interface XYExpressManager : NSObject
 
@@ -22,7 +20,8 @@
 //单例expressList
 + (instancetype)shareExpressManager;
 
-
+- (void)registerExpress:(XYExpress *)express ;
+- (void)unregisterExpress:(XYExpress *)express;
 
 
 @end

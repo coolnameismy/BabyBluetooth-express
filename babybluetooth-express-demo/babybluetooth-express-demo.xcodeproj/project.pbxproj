@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79148C861CC65B9C00F469CF /* XYPairing.m in Sources */ = {isa = PBXBuildFile; fileRef = 79148C851CC65B9C00F469CF /* XYPairing.m */; };
+		79148C891CC65BAC00F469CF /* XYConnecting.m in Sources */ = {isa = PBXBuildFile; fileRef = 79148C881CC65BAC00F469CF /* XYConnecting.m */; };
 		7996BCC81CC352EE00207DA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCC71CC352EE00207DA7 /* main.m */; };
 		7996BCCB1CC352EE00207DA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCCA1CC352EE00207DA7 /* AppDelegate.m */; };
 		7996BCCE1CC352EE00207DA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7996BCCD1CC352EE00207DA7 /* ViewController.m */; };
@@ -37,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79148C831CC5141400F469CF /* XYExpressActivityDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYExpressActivityDelegate.h; sourceTree = "<group>"; };
+		79148C841CC65B9C00F469CF /* XYPairing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPairing.h; sourceTree = "<group>"; };
+		79148C851CC65B9C00F469CF /* XYPairing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPairing.m; sourceTree = "<group>"; };
+		79148C871CC65BAC00F469CF /* XYConnecting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYConnecting.h; sourceTree = "<group>"; };
+		79148C881CC65BAC00F469CF /* XYConnecting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYConnecting.m; sourceTree = "<group>"; };
 		7996BCC31CC352EE00207DA7 /* babybluetooth-express-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babybluetooth-express-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7996BCC71CC352EE00207DA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7996BCC91CC352EE00207DA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +157,11 @@
 				7996BCFD1CC356C500207DA7 /* XYExpress.m */,
 				7996BD191CC3814F00207DA7 /* XYExpressManager.h */,
 				7996BD1A1CC3814F00207DA7 /* XYExpressManager.m */,
+				79148C831CC5141400F469CF /* XYExpressActivityDelegate.h */,
+				79148C841CC65B9C00F469CF /* XYPairing.h */,
+				79148C851CC65B9C00F469CF /* XYPairing.m */,
+				79148C871CC65BAC00F469CF /* XYConnecting.h */,
+				79148C881CC65BAC00F469CF /* XYConnecting.m */,
 			);
 			name = "BabyBluetooth-express";
 			path = ../Classes/Objc;
@@ -292,8 +304,10 @@
 				7996BD111CC356F100207DA7 /* BabyBluetooth.m in Sources */,
 				7996BD141CC356F100207DA7 /* BabyOptions.m in Sources */,
 				7996BCCB1CC352EE00207DA7 /* AppDelegate.m in Sources */,
+				79148C891CC65BAC00F469CF /* XYConnecting.m in Sources */,
 				7996BD151CC356F100207DA7 /* BabyPeripheralManager.m in Sources */,
 				7996BD1B1CC3814F00207DA7 /* XYExpressManager.m in Sources */,
+				79148C861CC65B9C00F469CF /* XYPairing.m in Sources */,
 				7996BCFE1CC356C500207DA7 /* XYExpress.m in Sources */,
 				7996BD121CC356F100207DA7 /* BabyCallback.m in Sources */,
 				7996BD171CC356F100207DA7 /* BabySpeaker.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "XYExpressManager.h"
-
+#import "XYExpress.h"
 
 @implementation XYExpressManager
 
@@ -41,6 +41,15 @@
     return nil;
 }
 
+- (void)registerExpress: (XYExpress *)express {
+    [self.list addObject:express];
+}
+
+- (void)unregisterExpress: (XYExpress *)express {
+    if ([self.list containsObject:express]) {
+        [self.list removeObject:express];
+    }
+}
 - (void)setBabybluetoothDelegate {
     __weak __typeof(self) weakSelf = self;
 
@@ -84,7 +93,6 @@
         [weakSelf emit:KNOTIYVALUE uuid:characteristic.service.peripheral.identifier data:nil error:error];
 
     }];
-
 }
 
 
