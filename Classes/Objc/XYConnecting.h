@@ -15,6 +15,7 @@
 @interface XYConnecting : NSObject
 
 
+typedef BOOL (^XYFilterConnectBlock)(CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI);
 
 #pragma  mark -  启动连接
 
@@ -24,10 +25,11 @@
  2：连接设备后会扫描和发现设备的全部服务和特征值，会把所有的特征值读取一次
  3：读取设备数据时会先进
  4：全部操作完成会回叫ready方法，开发者可以在ready方法实现自己的逻辑
+ 5：连接成功后会关闭扫描
  */
 - (void)connectWithName:(NSString *)nameCondition;
-- (void)connectWithUUIDString:(NSString *)nameCondition;
-- (void)connectWithBlock:(BOOL (^) (NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI))block;
+- (void)connectWithUUIDString:(NSString *)UUIDString;
+- (void)connectWithBlock:(BOOL (^) (CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI))block;
 
 
 

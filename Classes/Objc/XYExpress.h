@@ -27,7 +27,7 @@
 
 
 typedef void (^XYUpdateStateBlock)(BOOL enable);
-typedef BOOL (^XYFilterDiscoverBlock)(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI);
+
 typedef void (^XYOnReadyBlock)(CBPeripheral *peripheral);
 
 @property (nonatomic , copy) CBPeripheral *thePeripheral;

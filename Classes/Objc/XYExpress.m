@@ -17,7 +17,7 @@
 }
 
 @property (nonatomic ,copy) XYUpdateStateBlock updateStateBlock;
-@property (nonatomic ,copy) XYFilterDiscoverBlock filterDiscoverBlock;
+
 @property (nonatomic ,copy) XYOnReadyBlock onReadyBlock;
 
 @end
@@ -43,18 +43,20 @@
  从扫描开始启动
  */
 
-- (void)startWithNameCondition:(NSString *)nameCondition{
-    self.filterDiscoverBlock =  ^(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI){
-#warning 实现% like匹配
-        return [nameCondition isEqualToString:peripheralName];
-    };
-    baby.scanForPeripherals().begin();
-}
-
-- (void)startWithBlock:(BOOL (^) (NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI))block{
-    self.filterDiscoverBlock = block;
-    baby.scanForPeripherals().begin();
-}
+//- (void)startWithNameCondition:(NSString *)nameCondition{
+//    self.fi
+//    
+//    self.filterDiscoverBlock =  ^(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI){
+//#warning 实现% like匹配
+//        return [nameCondition isEqualToString:peripheralName];
+//    };
+//    baby.scanForPeripherals().begin();
+//}
+//
+//- (void)startWithBlock:(BOOL (^) (NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI))block{
+//    self.filterDiscoverBlock = block;
+//    baby.scanForPeripherals().begin();
+//}
 
 
 
@@ -97,11 +99,11 @@
             return;
         }
         //未连接,满足条件连接
-        if (self.filterDiscoverBlock(p.name, [data objectForKey:@"centralManager"], [data objectForKey:@"rssi"])) {
-            if (p) {
-                baby.having(p).enjoy();
-            }
-        }
+//        if (self.filterDiscoverBlock(p.name, [data objectForKey:@"centralManager"], [data objectForKey:@"rssi"])) {
+//            if (p) {
+//                baby.having(p).enjoy();
+//            }
+//        }
     }
     
     
