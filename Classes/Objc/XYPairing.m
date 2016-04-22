@@ -20,7 +20,7 @@
 
 //配对成功，关闭配对
 - (void)done{
-    
+    [[BabyBluetooth shareBabyBluetooth] cancelScan];
 }
 
 

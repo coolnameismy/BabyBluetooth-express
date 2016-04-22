@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "XYExpress.h"
 
-@interface ViewController ()
+
+@interface ViewController()
 
 @end
 
@@ -18,12 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    XYConnecting *connecting = [[XYConnecting alloc]init];
+    connecting.delegate = self;
+    [connecting connectWithUUIDString:@""];
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/**
+ 说明：这个方法作为自定义的业务逻辑的入口,外设所有的服务，特征和特征值数据集合完成后回调
+ **/
+- (void)express:(XYConnecting *)express onReady:(CBPeripheral *)peripheral {
+    
+    
 }
+
 
 @end

@@ -10,6 +10,8 @@
 #import "BabyBluetooth.h"
 #import "XYExpressManager.h"
 #import "XYExpressActivityDelegate.h"
+#import "XYConnecting.h"
+#import "XYExpressDelegate.h"
 
 #define KCONNECT @"KCONNECT"
 #define KDISCOVERS @"KDISCOVERS"

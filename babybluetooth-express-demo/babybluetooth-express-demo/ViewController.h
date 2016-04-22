@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XYExpress.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<XYEpressDelegate>
 
 
 @end

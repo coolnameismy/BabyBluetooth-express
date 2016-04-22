@@ -77,6 +77,7 @@
 		7996BD0F1CC356F100207DA7 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
 		7996BD191CC3814F00207DA7 /* XYExpressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYExpressManager.h; sourceTree = "<group>"; };
 		7996BD1A1CC3814F00207DA7 /* XYExpressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYExpressManager.m; sourceTree = "<group>"; };
+		79B996261CCA43E90016358F /* XYExpressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYExpressDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +163,7 @@
 				79148C851CC65B9C00F469CF /* XYPairing.m */,
 				79148C871CC65BAC00F469CF /* XYConnecting.h */,
 				79148C881CC65BAC00F469CF /* XYConnecting.m */,
+				79B996261CCA43E90016358F /* XYExpressDelegate.h */,
 			);
 			name = "BabyBluetooth-express";
 			path = ../Classes/Objc;
