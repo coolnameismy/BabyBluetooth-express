@@ -15,7 +15,7 @@
 @interface XYConnecting : NSObject
 
 
-typedef BOOL (^XYFilterConnectBlock)(CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI);
+typedef BOOL (^XYFilterBlock)(CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI);
 
 #pragma  mark -  启动连接
 

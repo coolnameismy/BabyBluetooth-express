@@ -119,6 +119,7 @@
         case CBCentralManagerStatePoweredOn:
             BabyLog(@">>>CBCentralManagerStatePoweredOn");
             [[NSNotificationCenter defaultCenter]postNotificationName:BabyNotificationAtCentralManagerEnable object:@{@"central":central}];
+            [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(forDebug) userInfo:nil repeats:YES];
             break;
         default:
             break;
@@ -137,7 +138,7 @@
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
     
     //日志
-    //BabyLog(@"当扫描到设备:%@",peripheral.name);
+    BabyLog(@">>>didDiscoverPeripheral:%@",peripheral.name);
     [self addDiscoverPeripheral:peripheral];
     
     //发出通知
@@ -487,6 +488,12 @@
 
 - (NSArray *)findConnectedPeripherals{
     return connectedPeripherals;
+}
+
+//调试使用
+-(void)forDebug {
+ 
+    
 }
 
 

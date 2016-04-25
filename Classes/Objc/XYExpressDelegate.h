@@ -27,7 +27,7 @@
  
  收到数据后会首先进入数据解析，方法会把解析后的数据传入onRecivedData方法，如果不需要做解析可以直接返回接收的数据
  */
-- (void)express:(XYConnecting *)express parseData:(NSData *)data;
+- (NSDictionary *)express:(XYConnecting *)express parseDataOnCharacteristic:(NSString *) characteristic withData:(NSData *)data;
 - (void)express:(XYConnecting *)express onRecivedData:(NSDictionary *)data;
 
 
