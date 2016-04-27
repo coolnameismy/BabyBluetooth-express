@@ -250,6 +250,7 @@
 				TargetAttributes = {
 					7996BCC21CC352EE00207DA7 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = QGDUF2E9QW;
 					};
 					7996BCDB1CC352EE00207DA7 = {
 						CreatedOnToolsVersion = 7.3;
@@ -445,8 +446,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "babybluetooth-express-demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jumppo.babybluetooth.express.babybluetooth-express-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,8 +459,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "babybluetooth-express-demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jumppo.babybluetooth.express.babybluetooth-express-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
