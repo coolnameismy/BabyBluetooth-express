@@ -31,10 +31,7 @@
                                  nil];
         
 #else
-        NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
-                                 //蓝牙power没打开时alert提示框
-                                 [NSNumber numberWithBool:YES],CBCentralManagerOptionShowPowerAlertKey,
-                                 nil];
+        NSDictionary *options = nil;
 #endif
         
         NSArray *backgroundModes = [[[NSBundle mainBundle] infoDictionary]objectForKey:@"UIBackgroundModes"];
@@ -119,7 +116,6 @@
         case CBCentralManagerStatePoweredOn:
             BabyLog(@">>>CBCentralManagerStatePoweredOn");
             [[NSNotificationCenter defaultCenter]postNotificationName:BabyNotificationAtCentralManagerEnable object:@{@"central":central}];
-            [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(forDebug) userInfo:nil repeats:YES];
             break;
         default:
             break;
@@ -138,7 +134,7 @@
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
     
     //日志
-    BabyLog(@">>>didDiscoverPeripheral:%@",peripheral.name);
+    //BabyLog(@"当扫描到设备:%@",peripheral.name);
     [self addDiscoverPeripheral:peripheral];
     
     //发出通知
@@ -150,13 +146,6 @@
             if ([currChannel blockOnDiscoverPeripherals]) {
                 [[babySpeaker callbackOnCurrChannel] blockOnDiscoverPeripherals](central,peripheral,advertisementData,RSSI);
             }
-        }
-    }
-    
-    
-    if ([currChannel blockOnDiscoverPeripherals]) {
-        if ([currChannel filterOnDiscoverPeripherals](peripheral.name,advertisementData,RSSI)) {
-            [[babySpeaker callbackOnCurrChannel] blockOnDiscoverPeripherals](central,peripheral,advertisementData,RSSI);
         }
     }
     
@@ -488,12 +477,6 @@
 
 - (NSArray *)findConnectedPeripherals{
     return connectedPeripherals;
-}
-
-//调试使用
--(void)forDebug {
- 
-    
 }
 
 

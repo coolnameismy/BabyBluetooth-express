@@ -16,7 +16,7 @@
 # pragma mark - baby 行为定义
 
 //Baby if show log 是否打印日志，默认打印
-#define KBABY_IS_SHOW_LOG 1
+#define KBABY_IS_SHOW_LOG 0
 
 //CBcentralManager等待设备打开次数
 # define KBABY_CENTRAL_MANAGER_INIT_WAIT_TIMES 5
